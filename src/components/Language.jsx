@@ -24,8 +24,8 @@ const Language = ({ name, img, options }) => {
 
       {!showImage && (
         <ol className="h-100 d-flex flex-column justify-content-center">
-          {options.map((item) => {
-            return <li className="h5 text-start">{item}</li>;
+          {options.map((item,index) => {
+            return <li key={index} className="h5 text-start">{item}</li>;
           })}
         </ol>
       )}
